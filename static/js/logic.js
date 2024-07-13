@@ -20,7 +20,7 @@ d3.json(queryUrl, function(data) {
     if (depth > 90) return "#CC0000";
     else if (depth > 70) return "#FF3333";
     else if (depth > 50) return "#FF6200";
-    else if (depth > 30) return "#0073FF";
+    else if (depth > 30) return "#00F3FF";
     else if (depth > 10) return "1BFB00";
     else return "#00CC00";
 }
@@ -65,7 +65,7 @@ function createMarkers(feature) {
    legend.onAdd = function() {
        const div = L.DomUtil.create("div", "legend");
        const grades = [0, 10, 30, 50, 70, 90];
-       const colors = ["#00FF00", "#ADFF2F", "#5DADE2", "#FF8C00", "#FF4500", "#A93226"];
+       const colors = ["##00CC00", "#1BFB00", "#00F3FF", "#FF6200", "#FF3333", "#CC0000"];
 
        div.innerHTML = "<h4>Depth (km)</h4>";
 
